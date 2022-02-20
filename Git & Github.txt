@@ -1,5 +1,5 @@
-											|									    Git                                       |
-											|---------------------------------------------------------------------------------|
+							|					 Git                                      |
+							|---------------------------------------------------------------------------------|
 
 git   --------------- To search whether git is installed or not
 
@@ -53,25 +53,3 @@ git reset --hard upstream/main    --------------
 git pull upstream main --------------------------------------Single cmd for fetching		
 
 git rebase -i <ID> ------------------- To commit more than one commits at a time above the ID
-
-																		
-																				
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
