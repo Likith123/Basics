@@ -1,2 +1,3 @@
 # Basics
-Basics of Git
+- Basics of Git
+- It's .txt file
