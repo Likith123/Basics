@@ -1,0 +1,55 @@
+							|					 Git                                      |
+							|---------------------------------------------------------------------------------|
+
+git   --------------- To search whether git is installed or not
+
+git init ------------------- To initialize the git in our local system
+
+git status ---------------- To know what changes(save/change/delete) we have made in our local system those are not yet saved in github
+
+git add <file_name> ---------------- To stage the unsaved files
+
+git restore --staged "<file_name>"  ------------- This will make the staged files unstaged
+
+/**       Required
+
+git config --global user.email "<you@example.com>" --------------------------- To login with your email
+
+git config --global user.name "<Your Name>" ----------------- To enter your GithubID locally  
+
+**/
+
+git commit -m "<Message>" ---------------- Commit the staged changes to your repository(require ur credentials), -m means Message(optional)
+
+git log        ------------------------- To see the commit history
+
+git reset <logID> (Ex :- e97e890085e9f9f86ae15908f9ffe38acdd273ba) -------------------------- To unstage upto the given logID if any by-mistake commit is/are done
+
+git remote add origin <repository_url> ---------------------------- To stage into virtual Git/ Github repository(only staging)
+
+git push origin <branch_name>(Ex:- git push origin master) --------------------------- To push into the github repository after staging
+(** head is now pointed to the master branch **)
+
+git branch <new_branch_name> ---------------------- To create a new branch
+
+git checkout <new_branch_name> --------------------- What are all the changes that are made from now to the repository will be reflected in this new branch rather than in master branch 
+(** head is then pointed to the new branch **)
+
+git merge <new_branch_name> ------------------ To merge the new branch into master branch 
+
+git clone <url> -------------------- To clone other project in local
+
+git stash ---------------------------- 
+
+Fork -------------------- To make a clone of other's project into your account in github
+
+upstream ------------------------- The url from where the project is forked(Ex:- git remote add upstream <url>)
+
+# For every new commit/push, it would be better if you create a new branch and then pull request
+
+git fetch --all --prune          ---------------------------------- To fetch other commits of other branch into main branch
+git reset --hard upstream/main    -------------- 
+																				(or)
+git pull upstream main --------------------------------------Single cmd for fetching		
+
+git rebase -i <ID> ------------------- To commit more than one commits at a time above the ID
